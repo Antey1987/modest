@@ -1,8 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 
-// ********************** mobile *******************************
+// ********************** mobile ***********************************
 
 * {
     box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+// ********************** tablet => sm 768px ******************************
+
+@media(min-width:768px) {
+}
+// ********************** laptop => md ******************************
+
+@media(min-width:1024px) {   
+}
+// ********************** desktop => lg ******************************
+
+@media(min-width:1200px) {  
+}
+// ********************** only mobile <767px******************************
+
+@media(max-width:767px) {
+    
 }
