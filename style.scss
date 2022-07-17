@@ -164,11 +164,6 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .hidden-xs {
-        display: none;
-    }
-    
-
 }
 // ********************** laptop => md ******************************
 
@@ -236,11 +231,43 @@
     .menu {
         li {
             font-size: 14px;
-
             a {
                 padding: 8px;
-            }
-           
+            } 
+        }
+    }
+    .header-form-search {
+        position: relative;
+        ::placeholder {
+            font-size: 14px;
+            color: #a4aead;
+            
+        }
+        input {
+            background-color: transparent;
+            border: none;
+            color: #a4aead;
+            font-size: 14px;
+            border: 2px solid #3c4147;
+            border-radius: 8px;
+            padding: 7px 27px 7px 7px;
+            width: 100%;
+            margin-top: 4px;
+        }
+        .btn-search {
+            height: 20px;
+            width: 20px;
+            background-image: url(images/search.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 11px;
+            right: 7px;
+
+
+
         }
     }
 }
