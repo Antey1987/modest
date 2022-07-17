@@ -60,6 +60,43 @@
     }
 }
 
+.main {
+    .slider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-image: url(images/background1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+        color: #ffffff;
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+        .btn {
+            height: 40px;
+            width: 120px;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 8%;
+            background-color: transparent;
+            margin-right: 10px;
+            
+        }
+        .btn:hover {
+            cursor: pointer;
+            background-color: #23b7a3;
+            border: none;
+        }
+    }
+    
+}
+
 .col-xs-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -164,6 +201,11 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .main {
+        .slider {
+            height: 500px;
+        }
+    }
 }
 // ********************** laptop => md ******************************
 
@@ -265,9 +307,12 @@
             position: absolute;
             top: 11px;
             right: 7px;
-
-
-
+        }
+    }
+    .main {
+        .slider {
+            text-align: start;
+            height: 660px;
         }
     }
 }
@@ -328,7 +373,7 @@
 }
 // ********************** only mobile <767px*************************
 
-@media(max-width:768px) {
+@media(max-width:992px) {
     .hidden-xs {
         display: none;
     }
