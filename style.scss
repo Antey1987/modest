@@ -39,28 +39,26 @@
 .menu {
   text-align: center;
   display: flex;
-  justify-content: baseline;
   overflow-x: scroll;
   li {
-    // padding-bottom: 10px;
-    // padding-top: 10px;
     padding: 8px;
     margin: 5px;
     font-size: 14px;
-    :hover {
-      border: 2px solid #a4aead;
-      border-radius: 8%;
     }
-    a {
+    a { 
       text-decoration: none;
       color: #a4aead;
       padding: 5px;
+      border: 2px solid transparent;
+      &:hover {
+        border-color: #a4aead;
+        border-radius: 8%;
     }
   }
 }
 
 .main {
-  .slider {
+  .section-slider {
     display: flex;
     align-items: center;
     text-align: center;
@@ -202,7 +200,7 @@
     }
   }
   .main {
-    .slider {
+    .section-slider {
       text-align: start;
     }
   }
@@ -213,7 +211,6 @@
   .container {
     max-width: 1170px;
   }
-  
 }
 // ********************** only mobile <767px*************************
 
