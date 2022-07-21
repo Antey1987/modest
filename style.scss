@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Quattrocento+Sans:wght@700&display=swap');
 // ********************** mobile ***********************************
 
 * {
@@ -57,7 +57,14 @@
   }
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #8d8f92;
+  
+  }
 .main {
+    font-family: 'Quattrocento Sans', sans-serif;
   .section-slider {
     display: flex;
     align-items: center;
@@ -67,14 +74,12 @@
     background-position: center;
     height: 660px;
     color: #ffffff;
-    h1 {
+    .title-white {
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 30px;
     }
-    p {
-      margin-bottom: 40px;
-    }
+   
     .btn {
       height: 40px;
       width: 120px;
@@ -83,6 +88,7 @@
       border-radius: 8%;
       background-color: transparent;
       margin-right: 10px;
+      margin-top: 40px;
     }
     .btn:hover {
       cursor: pointer;
@@ -90,7 +96,45 @@
       border: none;
     }
   }
-}
+  .section-about {
+    text-align: center;
+    height: fit-content;
+
+    
+    .social-networks {
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        .square-left {
+            width: 60px;
+            height: 60px;
+            background-color: #c7cdd0;
+            line-height: 100px;
+            &:hover {
+                background-color: #e5eaed ;
+            }
+
+        }
+    }
+       
+    }
+    }
+    .title-dark {
+        margin-top: 80px;
+        margin-bottom: 60px;
+        font-size: 36px;
+        font-weight: bold;
+        color: #292f36;
+    }
+    .left-menu-about {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        
+    }
+    
+
 
 .col-xs-12 {
   flex: 0 0 100%;
@@ -203,6 +247,12 @@
     .section-slider {
       text-align: start;
     }
+    .section-about {
+        text-align: start;
+        .social-networks {
+            justify-content: flex-start;
+        }
+      }
   }
 }
 // ********************** desktop => lg *****************************
