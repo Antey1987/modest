@@ -79,6 +79,7 @@ p {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 30px;
+  color: #ffffff;
 }
 .main .section-slider .btn {
   height: 40px;
@@ -101,18 +102,47 @@ p {
   height: -moz-fit-content;
   height: fit-content;
 }
-.main .section-about .social-networks {
+.main .section-about .left-menu-about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+.main .section-about .left-menu-about span {
+  font-weight: bold;
+}
+.main .section-about .right-menu-about {
+  display: flex;
+  margin-bottom: 30px;
+}
+.main .section-about h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #292f36;
+  line-height: 1.5;
+}
+.main .section-about .square {
+  width: 50px;
+  height: 50px;
+  background-color: #23b7a3;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: white;
+}
+.main .social-networks {
+  text-align: center;
   display: flex;
   justify-content: center;
   gap: 2px;
 }
-.main .section-about .social-networks .square-left {
+.main .social-networks .square-left {
   width: 60px;
   height: 60px;
   background-color: #c7cdd0;
   line-height: 100px;
 }
-.main .section-about .social-networks .square-left:hover {
+.main .social-networks .square-left:hover {
   background-color: #e5eaed;
 }
 
@@ -124,10 +154,9 @@ p {
   color: #292f36;
 }
 
-.left-menu-about {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.col-xs-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
 }
 
 .col-xs-12 {
