@@ -83,7 +83,22 @@ p {
         margin-right: 10px;
         margin-top: 40px;
       }
-  .section-slider {
+      .title-white {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #ffffff;
+      }
+    
+      .title-dark {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        font-size: 36px;
+        font-weight: bold;
+        color: #292f36;
+      }
+    .section-slider {
     display: flex;
     align-items: center;
     text-align: center;
@@ -93,8 +108,8 @@ p {
     height: 660px;
     color: #ffffff;
     
-  }
-  .section-about {
+    }
+    .section-about {
     text-align: center;
     height: fit-content;
     .left-menu-about {
@@ -246,24 +261,30 @@ p {
            
         }
     }
+
+    .section-services {
+        padding-bottom: 160px;
+        .services-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .services-flex-child {
+                padding-top: 20px;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 30px;
+            }
+        }
+
+    }
        
     }
-    .title-white {
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 30px;
-        color: #ffffff;
-      }
     
-    .title-dark {
-        text-align: center;
-        margin-top: 80px;
-        margin-bottom: 60px;
-        font-size: 36px;
-        font-weight: bold;
-        color: #292f36;
-    }
-
 .col-xs-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -284,6 +305,13 @@ p {
     .photo-flex {
         display: flex;
         justify-content: space-around;
+    }
+    .section-services {
+        .services-flex {
+            .services-flex-child {
+                width: 33.33333%; 
+            }
+        }
     }
   }
 
@@ -402,6 +430,13 @@ p {
       }
       .title-dark {
         text-align: start;}
+    .section-services {
+        .services-flex {
+            .services-flex-child {
+                 width: 33.33333%; 
+            }
+        }
+    }    
         
   }
 }
@@ -411,10 +446,21 @@ p {
   .container {
     max-width: 1170px;
   }
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
   .main {
     .photo-flex-1 {
             display: flex;
         }
+        .section-services {
+            .services-flex {
+                .services-flex-child {
+                     width: 25%; 
+                }
+            }
+        }        
   }
 }
 // ********************** only mobile <767px*************************
