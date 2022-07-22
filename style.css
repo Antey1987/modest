@@ -66,6 +66,23 @@ p {
 .main {
   font-family: "Quattrocento Sans", sans-serif;
 }
+.main [class*=btn-] {
+  height: 40px;
+  width: 120px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8%;
+  background-color: transparent;
+}
+.main [class*=btn-]:hover {
+  cursor: pointer;
+  background-color: #23b7a3;
+  border: none;
+}
+.main .btn-slider {
+  margin-right: 10px;
+  margin-top: 40px;
+}
 .main .section-slider {
   display: flex;
   align-items: center;
@@ -75,27 +92,6 @@ p {
   background-position: center;
   height: 660px;
   color: #ffffff;
-}
-.main .section-slider .title-white {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #ffffff;
-}
-.main .section-slider .btn {
-  height: 40px;
-  width: 120px;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 8%;
-  background-color: transparent;
-  margin-right: 10px;
-  margin-top: 40px;
-}
-.main .section-slider .btn:hover {
-  cursor: pointer;
-  background-color: #23b7a3;
-  border: none;
 }
 .main .section-about {
   text-align: center;
@@ -146,8 +142,12 @@ p {
 .main .section-about .social-networks .square-left:hover {
   background-color: #e5eaed;
 }
+.main .section-team {
+  padding-bottom: 100px;
+}
 .main .section-team .photos-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
   text-align: center;
@@ -208,6 +208,46 @@ p {
   color: #39454d;
   line-height: 2;
 }
+.main .section-work {
+  text-align: center;
+  background-color: #39454d;
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+.main .section-work .work-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.main .section-work .work-flex .work-photo {
+  position: relative;
+}
+.main .section-work .work-flex .work-photo:hover .photo-text-work {
+  display: block;
+}
+.main .section-work .work-flex .work-photo .photo-text-work {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  background-color: #292f35;
+  height: 60px;
+  width: 100%;
+  padding-top: 8px;
+  color: white;
+}
+.main .section-work .btn-work {
+  margin: 0 auto;
+  margin-top: 60px;
+  left: 50%;
+}
+
+.title-white {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
 
 .title-dark {
   text-align: center;
@@ -235,7 +275,6 @@ p {
   .main .photo-flex {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 100px;
   }
   .col-sm-6 {
     flex: 0 0 50%;
@@ -330,7 +369,7 @@ p {
     width: 100%;
     margin-top: 2px;
   }
-  .header-form-search .btn-search {
+  .header-form-search .search-btn {
     height: 20px;
     width: 20px;
     background-image: url(images/search.png);
@@ -343,6 +382,9 @@ p {
     right: 7px;
   }
   .main .section-slider {
+    text-align: start;
+  }
+  .main .section-work {
     text-align: start;
   }
   .main .section-about {
