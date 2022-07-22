@@ -148,19 +148,56 @@ p {
         }
     }
     .section-team {
-        display: flex;
         .photos-block {
+            display: flex;
+            justify-content: center;
             margin: 20px;
             text-align: center;
             .photo {
+                :hover .photo-text   {
+                    background-color: #39454d;
+                    h3,p {
+                        color: white;
+                    }
+                }
+                :hover .social-networks {
+                    display: flex;
+                }
                 position: relative;
                 height: 385px;
+                .social-networks {
+                    display: none;
+                    gap: 1px;
+                    position: absolute;
+                    top: 30%;
+                    left: 55px;
+                    [class*="icon"] {
+                        width: 50px;
+                        height: 50px;
+                        background-color: #39454d;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .icon-tw {
+                        background-image: url(images/icon-tw.png);
+                    }
+                    .icon-f {
+                        background-image: url(images/icon-f.png);
+                    }
+                    .icon-in {
+                        background-image: url(images/icon-in\ \(1\).png);
+                    }
+                }
                 .photo-text {
                     position: absolute;
                     top: 300px;
                     background-color: #e1e5e9;
                     width: 263px;
                     padding: 20px;
+                    p {
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
                 }
                 a {
                     text-decoration: none;
@@ -203,6 +240,18 @@ p {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+  .main {
+    .photo-flex {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 100px;
+    }
+  }
+
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 // ********************** laptop => md ******************************
@@ -312,6 +361,7 @@ p {
       }
       .title-dark {
         text-align: start;}
+        
   }
 }
 // ********************** desktop => lg *****************************
@@ -319,6 +369,11 @@ p {
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+  .main {
+    .photo-flex-1 {
+            display: flex;
+        }
   }
 }
 // ********************** only mobile <767px*************************
