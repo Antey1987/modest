@@ -164,7 +164,8 @@ p {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin: 20px;
+            margin-top: 10px;
+            margin-right: 20px;
             text-align: center;
             .photo {
                 :hover .photo-text   {
@@ -304,7 +305,8 @@ p {
   .main {
     .photo-flex {
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .section-services {
         .services-flex {

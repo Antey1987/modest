@@ -163,7 +163,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
   text-align: center;
 }
 .main .section-team .photos-block .photo {
@@ -290,7 +291,8 @@ p {
   }
   .main .photo-flex {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .main .section-services .services-flex .services-flex-child {
     width: 33.33333%;
