@@ -283,7 +283,7 @@ p {
 .main .section-features .features-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .main .section-features .features-flex .features-flex-child {

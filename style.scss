@@ -291,7 +291,7 @@ p {
         .features-flex {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             .features-flex-child {
                 width: 360px;
