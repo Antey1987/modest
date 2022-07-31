@@ -178,7 +178,8 @@ p {
 .main .section-team .photos-block .photo :hover .photo-text {
   background-color: #39454d;
 }
-.main .section-team .photos-block .photo :hover .photo-text h3, .main .section-team .photos-block .photo :hover .photo-text p {
+.main .section-team .photos-block .photo :hover .photo-text h3,
+.main .section-team .photos-block .photo :hover .photo-text p {
   color: white;
 }
 .main .section-team .photos-block .photo :hover .social-networks {
@@ -304,6 +305,31 @@ p {
   padding-top: 60px;
   padding-bottom: 100px;
 }
+.main .section-map .contact-info-flex h2,
+.main .section-map .contact-info-flex p {
+  margin-bottom: 20px;
+}
+.main .section-map .form-block {
+  text-align: center;
+}
+.main .section-map .form-block .form {
+  margin: 20px;
+}
+.main .section-map .form-block .form input {
+  width: 70%;
+  height: 40px;
+  background-color: #e9edf1;
+  border: none;
+}
+.main .section-map .form-block .form textarea {
+  margin: 10px;
+  width: 70%;
+  background-color: #e9edf1;
+  border: none;
+}
+.main .section-map .form-block .btn-map {
+  background-color: #23b7a3;
+}
 
 @media (min-width: 768px) {
   .container {
@@ -384,6 +410,45 @@ p {
   }
   .main .section-about .social-networks {
     justify-content: flex-start;
+  }
+  .main .section-map {
+    position: relative;
+  }
+  .main .section-map .form-block {
+    position: absolute;
+    bottom: 100px;
+    width: 520px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: white;
+    text-align: start;
+  }
+  .main .section-map .form-block .form-flex {
+    display: flex;
+  }
+  .main .section-map .form-block .form {
+    margin: 20px;
+  }
+  .main .section-map .form-block .form input {
+    border-radius: 3px;
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #e9edf1;
+    border: none;
+  }
+  .main .section-map .form-block .form textarea {
+    border-radius: 3px;
+    margin: 10px;
+    width: 86%;
+    background-color: #e9edf1;
+    border: none;
+  }
+  .main .section-map .form-block .btn-map {
+    background-color: #23b7a3;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
   .main .title-dark {
     text-align: start;
