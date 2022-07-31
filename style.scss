@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Quattrocento+Sans:wght@700&display=swap');
+@import "./colls.css";
 // ********************** mobile ***********************************
 
 * {
@@ -28,7 +29,7 @@
 .header {
   background-color: #1d2126;
   position: sticky;
-  z-index: 100;
+  z-index: 10;
   top: 0;
 }
 
@@ -153,6 +154,7 @@ p {
                 line-height: 100px;
                 &:hover {
                     background-color: #e5eaed ;
+                    
                 }
     
             }
@@ -168,6 +170,9 @@ p {
             margin-right: 20px;
             text-align: center;
             .photo {
+                :hover > img {
+                    filter: brightness(90%);
+                }
                 :hover .photo-text   {
                     background-color: #39454d;
                     h3,p {
@@ -225,7 +230,6 @@ p {
             }
         }
     }
-    
     .section-work {
         text-align: center;
         background-color: #39454d;
@@ -262,7 +266,6 @@ p {
            
         }
     }
-
     .section-services {
         padding-bottom: 160px;
         .services-flex {
@@ -304,18 +307,16 @@ p {
                 color: white;
             }
         }
-    }   
+    }
+    .section-map { 
+        .contact-info-flex {
+            padding-top: 60px;
+            padding-bottom: 100px;
+        }
+    }  
+    
     }
     
-.col-xs-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%;
-    }
-
-.col-xs-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
 
 // ********************** tablet => sm 768px ************************
 
@@ -344,11 +345,6 @@ p {
         }
     }
   }
-
-  .col-sm-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
 }
 // ********************** laptop => md ******************************
 
@@ -356,54 +352,7 @@ p {
   .container {
     max-width: 960px;
   }
-  .col-md-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%;
-  }
-  .col-md-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%;
-  }
-  .col-md-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-  .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-  }
-  .col-md-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%;
-  }
-  .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .col-md-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%;
-  }
-  .col-md-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%;
-  }
-  .col-md-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  .col-md-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%;
-  }
-  .col-md-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%;
-  }
-  .col-md-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+ 
   .logo {
     text-align: start;
   }
@@ -471,10 +420,6 @@ p {
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
-  }
-  .col-lg-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
   }
   .main {
     .photo-flex-1 {
